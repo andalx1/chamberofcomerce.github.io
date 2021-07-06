@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storm Center</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <script defer src="js/scripts.js"></script>
+
+</head>
+<body>
+    
+    <div class="contenedor">
+            <div class="header">
+                <div class="pic"><img  src="images/logo2.png"/></div>
+                <div class="titulo"><h1>SUNNYGUIDE</h1></div>
+                <div class="moto">We always give the best advice</div>
+            </div>
+
+            <div class="nav">
+                <nav class="nav">
+                    <button class="toogle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="nav-menu ">
+                        <li><a Class="link" href="home.html">Home</a></li>
+                        <li><a Class="link" href="preston.html">Preston</a></li>
+                        <li><a Class="link" href="sodasprings.html">Soda Springs</a></li>
+                        <li><a Class="link" href="fishhaven.html">Fish Haven</a></li>
+                        <li><a Class="link link_active" href="stormcenter.html">Storm Center</a></li>
+                        <li><a Class="link" href="gallery.html">Gallery</a> </li> 
+                    </ul>
+                </nav>
+            </div>
+            <div class="space"></div>
+            <div class="space1"></div>
+
+
+            <div class="landscape"><h1>Notify the storm here</h1> </div>
+
+
+           
+            <div class="contenido">
+                <form method="GET" action="thanks.html">
+                    <div class="form">
+                                <fieldset>
+                                            <ul class="formbox">
+                                            <li>
+                                                <h3>Personal Information</h3>
+                                            </li> 
+                                                
+                                            <li>
+                                                <label for="name"> Full name <span class="mandentory">*</span>
+                                                <input type="text" id="name" name="name" required="" minlength="5" pattern="[A-Za-z">
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="email">Email
+                                                <input type="email" id="email" name="email" placeholder="example@email.com">
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="tel">Phone number <span class="mandentory">*</span>
+                                                <input type="tel" id="tel" name="tel" required="">        
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="zip">Zipcode <span class="mandentory">*</span>
+                                                <input type="number" id="zip" name="zip" required="">
+                                                </label>
+                                            </li>
+                                            </ul>
+                                </fieldset><br>
+                          <fieldset>
+                              <ul class="formbox">
+                              <li>
+                              <h3> Storm Information</h3>
+                              </li>
+                         
+                              <li>
+                                  <label for="stormdate">Storm date
+                                  <input type="date" id="stormdate" name="stormdate">
+                                  </label>
+                              </li>
+                              <li>
+                                  <label for="storm">Storm type 
+                                  <input list="storm-type" id="storm" name="storm">
+                                  
+                                  <datalist id="storm-type">
+                                      <option value="Flash Flood"></option>
+                                      <option value="Hail"></option>
+                                      <option value="Hurricane"></option>
+                                      <option value="Thunderstorm"></option>
+                                      <option value="Tornado"></option>
+                                  </datalist> 
+                              </label>
+                              </li>
+                              <li>
+                                 
+                                  <label for="severity">Storm level 
+                                     
+                                  <input type="range" id="severity" name="severity" value="1" min="0" max="10" step="1"></label>
+                                  <div class="level">
+                                  <span>from 0</span>  - <span>10</span>
+                                  </div>
+                                  
+                              </li>
+                              <li>
+                                  <label for="region">Storm region
+                                  <select id="region" name="region">
+                                      <option disabled="" selected="">Select region ...</option>
+                                      <option value="Preston">Preston</option>
+                                      <option value="Soda Springs">Soda Springs</option>
+                                      <option value="Fish Haven">Fish Haven</option> 
+                              </select>
+                              </label>
+                              </li>
+                                </ul> 
+                            </fieldset><br>
+                  
+                            <fieldset>
+                                <ul class="sbs">
+                                    <li>
+                                    <h3> Additional Information</h3>
+                                    </li>   
+                                            <li>
+                                        <label>Are you in danger?</label>
+                                        <label><input type="radio" name="answer" value="yes">Yes</label> 
+                                        <label><input type="radio" name="answer" value="maybe">Maybe</label>
+                                        <label><input type="radio" name="answer" value="no">No</label>
+                                    </li>
+                        
+                                    <li>
+                                        <label id="comment">Comments
+                                        <textarea name="comment"></textarea>
+                                        </label>
+                                    </li>       
+                                    </ul>
+                            </fieldset><br>
+                  
+                            <div class="sendbtn">
+                                <label>
+                                  <input type="submit" name="submit" value="REPORT" class="send">
+                               </label>
+                             </div>                   
+                  </div>         
+                 </form>
+
+        
+            </div> 
+
+            <div class="footer">
+                <div class="contact">
+                    <h2>CONTACT INFORMATION</h2>
+                    <p>
+                        &#127826 11 S 1st W StPreston, ID 83263<br>
+                        &#128222 305 354 72 20<br>
+                        &#128235 customerservice@sunnyguide.org
+                    </p>
+                </div> 
+                
+                <div class="social">
+                    <a href="#">
+                        <img src="images/facebook1.png" alt="Facebook">
+                    </a>
+                    <a href="#">
+                        <img src="images/instagram.png" alt="Facebook">
+                    </a>
+                    <a href="#">
+                        <img src="images/tweter.png" alt="Facebook">
+                    </a>
+                </div>  
+        
+                <div>
+                    <p>&copy; 2021 | Andres Benavides | Medellin, Colombia | <a href="https://www.byui.edu/online">https://www.byui.edu/online</a></p>
+                    <p>Last Modified: <span id="lastmod"></span></p>
+                </div>
+            </div>   
+    </div>
+   
+</body>
+</html>
