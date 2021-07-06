@@ -1,0 +1,80 @@
+@media (max-width: 1000px) {
+    menu {
+      margin:0;
+      padding: 0;
+    }
+    header {
+      height: 60px;
+    }
+    .titulo{
+      font-size: 1.5rem;
+    }
+    .pic img {
+      padding-top: 1rem;
+      width: 14rem;
+    }
+    .moto{
+      font-size: 1.2rem;
+    }
+    .nav {
+      background-color: #f7b425;
+      height: 80px;
+      width: 100%;
+     /* top: 60px;*/
+     /* left: 0;*/
+      /*display: flex;*/
+      /*align-content:center;*/
+    }
+    .link {
+      font-size: 15px;
+      color: rgb(27, 115, 91);
+      text-decoration: none;
+      margin: 0px 10px;
+      line-height: 80px;
+      text-transform: uppercase;
+      width: max-content;
+      padding: 6px 9px;
+    }
+    .link:hover, .link_active {
+      background: none;
+      color: white;   
+    }
+   .nav .nav-menu {
+      display: flex;
+      /*margin-right: 40px;*/
+      list-style: none;
+      justify-content: center;
+    }
+    .ima img{
+      width:100%;
+      height: 25rem;
+    }
+    .imaart{
+      width:80%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: auto;
+    }
+    
+   
+    .contenedor {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns:  1fr 1fr 1fr;
+      grid-template-rows: repeat(7, auto);
+      grid-template-areas:"header     header   header"
+                          "nav         nav     nav"
+                          "landscape   landscape   landscape"
+                          "contenido   contenido   contenido"
+                          "article     article     article"
+                          "imaart   imaart   imaart"
+  
+                          "footer      footer      footer";
+  }
+  
+  .contenedor .landscape {
+    grid-area: landscape;
+  }
+  }

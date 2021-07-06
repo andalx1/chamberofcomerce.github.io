@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor, .contenedor1, .contenedorg {
+  background: rgb(27, 115, 91);
+  display: block;
+  color: #f7b425;
+  font-family: 'Kanit', sans-serif;
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+}
+.home, .town {
+  padding: 30px;
+  text-align: left;
+}
+.cielo img{
+  width: 100%;
+
+}
+.header {
+  line-height: 50px;
+}
+.pic img {
+    padding-top: 1rem;
+    width: 18rem;
+  }
+  .titulo {
+    font-size: 2rem;
+    color: rgb(120, 167, 27);
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+  }
+  .moto {
+    font-size: 1.7rem;
+    color: blue;
+    padding-bottom: 1rem;
+    } 
+   
+
+.nav {
+    background-color: #f7b425;
+    height: 80px;
+    width: 100%;
+   /* top: 60px;*/
+   /* left: 0;*/
+    /*display: flex;*/
+    /*align-content:center;*/
+  }
+ .nav .nav-menu {
+    display: flex;
+    /*margin-right: 40px;*/
+    list-style: none;
+    justify-content: center;
+  }
+  .link {
+    color: rgb(27, 115, 91);
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0px 37px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+    padding: 8px 10px;
+  }  
+
+  .link:hover, .link_active {
+    background: none;
+    color: white;   
+  }
+  
+  /* TOGGLE */
+  .toogle {
+    color: rgb(21, 84, 28);
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+  }
+.landscape{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    position: relative;
+}
+.summary{
+  opacity: .7 ;
+  color: black;
+  width: 20rem;
+  font-size: 1.5rem;
+  right: 4rem;
+  top: 4rem;
+  border-radius: 1rem;
+  background: rgb(168, 194, 194);
+  position: absolute;
+  padding: 2px;
+}
+.wesum {
+  opacity: none;
+  color: rgb(27, 115, 91);
+  font-size: 2rem;
+  background: #f7b425;
+  padding: .5rem;
+  border-radius: 1rem;
+}
+.land img {
+  width: 100%;
+  height:30rem;
+}
+.contenido {
+  color: #f7b425;
+  width: 100%;
+  margin: auto;
+  padding: 40px 0;
+}
+.five{
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 3rem;
+}
+.fived{
+  width: 90%;
+  box-shadow: 1px 1px 12px rgb(72, 73, 72);
+  border-radius: .5rem;
+
+}
+.article{
+  color: #f7b425;
+  padding: 20px;
+  font-size: 18px;
+}
+.imaart {
+width: 100%;
+box-shadow: 1px 1px 18px rgb(67, 68, 66);
+border-radius: .5rem;
+color: rgb(21, 84, 28);
+}
+.ima img {
+  width: 100%;
+  border-radius: .5rem;
+}
+.footer{
+  width: 100%;
+  margin:auto;
+  padding: 3rem 0;
+}
+.form fieldset{
+  background: rgb(100, 97, 97);
+}
+.form li{
+  list-style-type: none;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+.form input{
+  font-size: 1.5rem;
+}
+.landscape h1 {
+  text-align: left;
+  padding: 3rem;
+}
+.landscape h3{
+  text-align: left;
+  font-size: 0rem;
+}
+
+
+/*grid de preston html xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+.contenedor {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 20% 1fr 1fr 1fr 20%;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:"header     header   header      header      header"
+                      "nav         nav     nav         nav         nav"
+                      "space   landscape   landscape   landscape     space1"
+                      "space   contenido   contenido   contenido    space1"
+                      "space   article     article     imaart    space1"
+                      "space   footer      footer      footer    space1";
+}
+.contenedor .header {
+  background: white;
+  grid-area: header;
+}
+.contenedor .nav {
+  grid-area: nav;
+}
+.contenedor .space {
+  grid-area: space;
+}
+.contenedor .space1 {
+  grid-area: space;
+}
+.contenedor .landscape {
+  grid-area: landscape;
+}
+.contenedor .contenido{
+
+  grid-area:contenido;
+}
+.contenedor .article{
+  grid-area:article;
+}
+.contenedor .imaart{
+  background: rgb(255, 255, 254);
+  grid-area:imaart;
+}
+.contenedor .footer{
+  background: rgb(5, 5, 5);
+  color: white;
+  grid-area:footer;
+}
+/*grid de home html xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+.contenedor1 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 20% 1fr 1fr 1fr 20%;
+  grid-template-rows: repeat(8, auto);
+  grid-template-areas:"header     header   header      header      header"
+                      "nav         nav     nav         nav         nav"
+                      "space   landscape   landscape   landscape     space1"
+                      "space   towninf    towninf   towninf   space1"
+                      "space   town1   town2   town3    space1"
+                      "space   acti    acti   acti   space1"
+                      "space   acti1   acti2   acti3    space1"
+                      "space   map      footer      footer    space1";
+}
+.contenedor1 .header {
+  background: white;
+  grid-area: header;
+}
+.contenedor1 .nav {
+  grid-area: nav;
+}
+.contenedor1 .space {
+  grid-area: space;
+}
+.contenedor1 .space1 {
+  grid-area: space;
+}
+.contenedor1 .landscape {
+  grid-area: landscape;
+}
+.contenedor1 .towninf {
+  grid-area: towninf;
+}
+.contenedor1 .town1{
+  grid-area:town1;
+}
+.contenedor1 .town2{
+  grid-area:town2;
+}
+.contenedor1 .town3{
+  grid-area:town3;
+}
+.contenedor1 .acti{
+  grid-area:acti;
+}
+.contenedor1 .acti1{
+  grid-area:acti1;
+}
+.contenedor1 .acti2{
+  grid-area:acti2;
+}
+.contenedor1 .acti3{
+  grid-area:acti3;
+}
+.contenedor1 .article{
+  grid-area:article;
+}
+.contenedor1 .imaart{
+  background: rgb(255, 255, 254);
+  grid-area:imaart;
+}
+.contenedor1 .map{
+  background: rgb(5, 5, 5);
+  grid-area:map;
+}
+.contenedor1 .footer{
+  background: rgb(5, 5, 5);
+  color: white;
+  grid-area:footer;
+}
+
+.town1, .town2, .town3, .acti1, .acti2, .acti3 {
+  color: rgb(27, 115, 91);
+  background: white;
+  border-radius: .3rem;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+}
+.townfot1, .townfot2, .townfot3{
+  width: 100%;
+  height: 50%;
+  border-radius: .3rem 0;
+}
+.tofot1, .tofot2, .tofot3{
+  width: 100%;
+  height: 60%;
+  border-radius: .3rem 0;
+}
+.towninf, .acti {
+  padding: 3.5rem;
+  display: flex;
+}
+.mapfot{
+  width:85%;  
+}
+.map{
+  padding: 2rem;
+  margin-right: -1rem;
+}
+.anuncio{
+  color: black;
+  width: 50rem;
+  font-size: 3.3rem;
+  position: absolute;
+  font-family: 'Festive', cursive;
+  right: 5rem;
+  top: 13rem;
+  text-shadow:4px 5px 10px white;
+  border-radius: 1rem;
+}
+.join{
+  padding: .7rem;
+  border-radius: 1rem;
+  background: rgb(81, 75, 75);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: whitesmoke;
+  text-shadow: none;
+}
+.home {
+  padding: 4rem;
+}
+/*grid de gallery html xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+.contenedorg {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 20% 1fr 1fr 1fr 20%;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:"header     header   header      header      header"
+                      "nav         nav     nav         nav         nav"
+                      "space   ima1   ima2   ima3     space1"
+                      "space   ima4   ima5   ima6    space1"
+                      "space   ima7   ima8   ima9    space1"
+                      "space   footer      footer      footer    space1";
+}
+.contenedorg .header {
+  background: white;
+  grid-area: header;
+}
+.contenedorg .nav {
+  grid-area: nav;
+}
+.contenedorg .space {
+  grid-area: space;
+}
+.contenedorg .space1 {
+  grid-area: space;
+}
+.contenedorg .ima1 {
+  grid-area: ima1;
+}
+.contenedorg .ima2 {
+  grid-area: ima2;
+}
+.contenedorg .ima3{
+  grid-area:ima3;
+}
+.contenedorg .ima4 {
+  grid-area: ima4;
+}
+.contenedorg .ima5 {
+  grid-area: ima5;
+}
+.contenedorg .ima6{
+  grid-area:ima6;
+}
+.contenedorg .ima7 {
+  grid-area: ima7;
+}
+.contenedorg .ima8 {
+  grid-area: ima8;
+}
+.contenedorg .ima9{
+  grid-area:ima9;
+}
+.contenedorg .footer{
+  background: rgb(5, 5, 5);
+  color: white;
+  grid-area:footer;
+}
+.ima1, .ima2, .ima3, .ima4, .ima5, .ima6, .ima7, .ima8, .ima9{
+  background: white;
+  padding: .2rem;
+  border-radius: 1rem;
+}
+.galima img {
+  width: 100%;
+  height: 17rem;
+  border-radius: 1rem;
+
+}
+.titgal {
+  padding: 2rem;
+  color: rgb(27, 115, 91);
+  font-size: 1.5rem;
+}
