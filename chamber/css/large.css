@@ -1,9 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
-}
-body{
-  background: rgb(131, 181, 193);
+  margin: 0;
+  padding: 0;
 }
 /*logo, nombre y menuDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD*/
 .chamenu {
@@ -32,8 +29,146 @@ body{
 }
 
 
-/*dddddddddddddddddddddddddddddddddddddddddddddd*/
+/*grid de home html xxxxxxxxxxxxxxxxXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+.contehome {
+  background: rgb(131, 181, 193);
+  font-family: 'Kanit', sans-serif;
+  display: grid;
+  grid-template-columns: 15% 1fr 1fr 1fr 15%;
+  grid-template-rows: repeat(8, auto);
+  grid-template-areas:"logo     chamname   chamname   chamenu   chamenu"
+                      "landscape   landscape   landscape   landscape     landscape"
+                      "space   purpose   purpose   purpose   space1"
+                      "space   goals   goals   goals    space1"
+                      "space   compinf    compinf   compinf   space1"
+                      "space   fab1   fab2   fab3    space1"
+                      "footer   footer     footer      footer    footer";
+}
 
+.contehome .logo {
+  background: rgb(253, 43, 43);
+  grid-area: logo;
+  padding-left: 7rem;
+  border-radius: 0 0 0 8rem;
+}
+.contehome .chamname {
+  background: rgb(253, 43, 43);
+  grid-area: chamname;
+}
+.contehome .chamenu {
+  background: rgb(253, 43, 43);
+  grid-area: chamenu;
+}
+.contehome .space {
+  background: #fcf9f9;
+  grid-area: space;
+}
+.contehome .space1 {
+  background: #fcf9f9;
+  grid-area: space1;
+}
+.contehome .landscape {
+  grid-area: landscape;
+}
+.contehome .purpose{
+  background: #571fb6;
+  grid-area:purpose;
+}
+.contehome .goals{
+  background: #fcf9f9;
+  grid-area:goals;
+}
+.contehome .compinf {
+  background: #fcf9f9;
+  grid-area: compinf;
+  padding: 3rem;
+}
+.contehome .fab1{
+  background: #ddd6d6;
+  grid-area:fab1;
+  margin: 4px;
+}
+.contehome .fab2{
+  background: #fcf9f9;
+  grid-area:fab2;
+}
+.contehome .fab3{
+  background: #fcf9f9;
+  grid-area:fab3;
+}
+.contehome .footer{
+  background-color: #312c4e;
+  color: white;
+  grid-area:footer;
+}
+.logo img{
+  width: 6rem;
+  padding-top: .5rem;
+}
+.titulo {
+  font-size: 1rem;
+  color: rgb(249, 250, 248);
+  text-shadow: 1px 1px 15px black, 0 0 .2em blue, 0 0 0.2em blue;
+}
+.chamname{
+  padding: .6rem;
+}
+.chamenu {
+  padding-top: 2rem;
+}
+.moto {
+  font-size: 1.4rem;
+  color: rgb(249, 249, 252);
+  } 
+  .landscape{
+    width: 100%;
+    position: relative;
+}
+.anuncio1, .anuncio2,{
+  color: white;
+}
+.townfot1, .townfot2, .townfot3{
+  width: 100%;
+  height: 50%;
+  border-radius: .5rem;
+}
+
+.join{
+  padding: .7rem;
+  border-radius: 1rem;
+  background-color: #312c4e;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.anuncio2{
+opacity: .9;  font-size: 3rem;
+}
+.anuncio3{
+  font-size: 2rem;
+}
+
+.home {
+  padding: 4rem;
+}
+.anuncio{
+  color: white;
+  width: 40rem;
+  position: absolute;
+  right: 3rem;
+  top: 5rem;
+  border-radius: 10rem 0 10rem 0;
+  padding: 4rem;
+  display: flex;
+  justify-content: right;
+  align-items:center;
+  flex-direction: column;
+  text-shadow: 4px 4px 4px rgb(12, 12, 12);
+}
+
+/*ddddddddddddddddddddddddddddddddddggggggggggggggggggggggggggggggdddddddddddd*/
 
 
 .contenedor, .contenedorg {
@@ -53,17 +188,6 @@ body{
 .cielo img{
   width: 100%;
 }
-.pic img {
-    padding-top: 1rem;
-    width: 18rem;
-  }
-  .titulo {
-    font-size: 1rem;
-    color: rgb(249, 250, 248);
-    text-shadow: 1px 1px 15px black, 0 0 .2em blue, 0 0 0.2em blue;
-  }
- 
-
 .summary{
   opacity: .7 ;
   color: black;
@@ -116,15 +240,7 @@ box-shadow: 1px 1px 18px rgb(67, 68, 66);
 border-radius: .5rem;
 color: rgb(21, 84, 28);
 }
-.ima img {
-  width: 100%;
-  border-radius: .5rem;
-}
-.footer{
-  width: 100%;
-  margin:auto;
-  padding: 3rem 0;
-}
+
 .form fieldset{
   background: rgb(100, 97, 97);
 }
@@ -137,148 +253,19 @@ color: rgb(21, 84, 28);
   font-size: 1.5rem;
 }
 
-
-
-
-
-/*grid de home html xxxxxxxxxxxxxxxxXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-.contehome {
-  font-family: 'Kanit', sans-serif;
-  display: grid;
-  grid-template-columns: 15% 1fr 1fr 1fr 15%;
-  grid-template-rows: repeat(8, auto);
-  grid-template-areas:"logo     chamname   chamname   chamenu   chamenu"
-                      "landscape   landscape   landscape   landscape     landscape"
-                      "space   towninf    towninf   towninf   space1"
-                      "space   town1   town2   town3    space1"
-                      "space   acti    acti   acti   space1"
-                      "space   acti1   acti2   acti3    space1"
-                      "footer   footer     footer      footer    footer";
-}
-
-.contehome .logo {
-  background: rgb(253, 43, 43);
-  grid-area: logo;
-  padding-left: 9rem;
-  border-radius: 0 0 0 8rem;
-
-}
-.contehome .chamname {
-  background: rgb(253, 43, 43);
-  grid-area: chamname;
-}
-.contehome .chamenu {
-  background: rgb(253, 43, 43);
-  grid-area: chamenu;
-}
-.contehome .nav {
-  grid-area: nav;
-}
-.contehome .space {
-  background: #fcf9f9;
-  grid-area: space;
-}
-.contehome .space1 {
-  background: #fcf9f9;
-  grid-area: space1;
-}
-.contehome .landscape {
-  grid-area: landscape;
-}
-.contehome .towninf {
-  background: #fcf9f9;
-  grid-area: towninf;
-}
-.contehome .town1{
-  background: #e1dede;
-  grid-area:town1;
-  margin: 2px;
-}
-.contehome .town2{
-  background: #fcf9f9;
-  grid-area:town2;
-}
-.contehome .town3{
-  background: #fcf9f9;
-  grid-area:town3;
-}
-.contehome .acti{
-  background: #fcf9f9;
-  grid-area:acti;
-}
-.contehome .acti1{
-  background: #fcf9f9;
-  grid-area:acti1;
-}
-.contehome .acti2{
-  background: #fcf9f9;
-  grid-area:acti2;
-}
-.contehome .acti3{
-  background: #fcf9f9;
-  grid-area:acti3;
-}
-.contehome .article{
-  background: #fcf9f9;
-  grid-area:article;
-}
-.contehome .imaart{
-  background: #fcf9f9;
-  grid-area:imaart;
-}
-.contehome .map{
-  background: rgb(5, 5, 5);
-  grid-area:map;
-}
-.contehome .footer{
-  background-color: #312c4e;
-  color: white;
-  grid-area:footer;
-}
-.logo img{
-  width: 6rem;
-}
-.chamname{
-  padding: .6rem;
-}
-.chamenu {
-  padding-top: 2rem;
-}
-.moto {
-  font-size: 1.4rem;
-  color: rgb(249, 249, 252);
-  } 
-  .landscape{
-    width: 100%;
-    position: relative;
-}
-.anuncio1, .anuncio2,{
-  color: white;
-}
-
-
-
-
-
-
-.town1, .town2, .town3, .acti1, .acti2, .acti3 {
+.acti1, .acti2, .acti3 {
   color: rgb(27, 115, 91);
   background: white;
   border-radius: .3rem;
   line-height: 2rem;
   margin-bottom: 3rem;
 }
-.townfot1, .townfot2, .townfot3{
-  width: 100%;
-  height: 50%;
-  border-radius: .3rem 0;
-}
 .tofot1, .tofot2, .tofot3{
   width: 100%;
   height: 60%;
   border-radius: .3rem 0;
 }
-.towninf, .acti {
+.acti {
   padding: 3.5rem;
   display: flex;
 }
@@ -289,41 +276,8 @@ color: rgb(21, 84, 28);
   padding: 2rem;
   margin-right: -1rem;
 }
-.anuncio{
-  color: white;
-  width: 40rem;
-  position: absolute;
-  right: 3rem;
-  top: 5rem;
-  border-radius: 10rem 0 10rem 0;
-  padding: 4rem;
-  display: flex;
-  justify-content: right;
-  align-items:center;
-  flex-direction: column;
-  text-shadow: 4px 4px 4px rgb(12, 12, 12);
-}
 
-.join{
-  padding: .7rem;
-  border-radius: 1rem;
-  background-color: #312c4e;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1rem;
-  text-decoration: none;
-  color: whitesmoke;
-}
 
-.anuncio2{
-opacity: .9;  font-size: 3rem;
-}
-.anuncio3{
-  font-size: 2rem;
-}
-
-.home {
-  padding: 4rem;
-}
 
 /*grid de preston html xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 .contenedor {
