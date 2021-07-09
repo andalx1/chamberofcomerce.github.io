@@ -63,12 +63,6 @@ body{
     text-shadow: 1px 1px 15px black, 0 0 .2em blue, 0 0 0.2em blue;
   }
  
-   
-
-
- 
-
- 
 
 .summary{
   opacity: .7 ;
@@ -151,7 +145,7 @@ color: rgb(21, 84, 28);
 .contehome {
   font-family: 'Kanit', sans-serif;
   display: grid;
-  grid-template-columns: 20% 1fr 1fr 1fr 20%;
+  grid-template-columns: 15% 1fr 1fr 1fr 15%;
   grid-template-rows: repeat(8, auto);
   grid-template-areas:"logo     chamname   chamname   chamenu   chamenu"
                       "landscape   landscape   landscape   landscape     landscape"
@@ -159,7 +153,7 @@ color: rgb(21, 84, 28);
                       "space   town1   town2   town3    space1"
                       "space   acti    acti   acti   space1"
                       "space   acti1   acti2   acti3    space1"
-                      "space   map      footer      footer    space1";
+                      "footer   footer     footer      footer    footer";
 }
 
 .contehome .logo {
@@ -181,43 +175,55 @@ color: rgb(21, 84, 28);
   grid-area: nav;
 }
 .contehome .space {
+  background: #fcf9f9;
   grid-area: space;
 }
 .contehome .space1 {
-  grid-area: space;
+  background: #fcf9f9;
+  grid-area: space1;
 }
 .contehome .landscape {
   grid-area: landscape;
 }
 .contehome .towninf {
+  background: #fcf9f9;
   grid-area: towninf;
 }
 .contehome .town1{
+  background: #e1dede;
   grid-area:town1;
+  margin: 2px;
 }
 .contehome .town2{
+  background: #fcf9f9;
   grid-area:town2;
 }
 .contehome .town3{
+  background: #fcf9f9;
   grid-area:town3;
 }
 .contehome .acti{
+  background: #fcf9f9;
   grid-area:acti;
 }
 .contehome .acti1{
+  background: #fcf9f9;
   grid-area:acti1;
 }
 .contehome .acti2{
+  background: #fcf9f9;
   grid-area:acti2;
 }
 .contehome .acti3{
+  background: #fcf9f9;
   grid-area:acti3;
 }
 .contehome .article{
+  background: #fcf9f9;
   grid-area:article;
 }
 .contehome .imaart{
-  background: rgb(255, 255, 254);
+  background: #fcf9f9;
   grid-area:imaart;
 }
 .contehome .map{
@@ -225,7 +231,7 @@ color: rgb(21, 84, 28);
   grid-area:map;
 }
 .contehome .footer{
-  background: rgb(5, 5, 5);
+  background-color: #312c4e;
   color: white;
   grid-area:footer;
 }
@@ -301,7 +307,7 @@ color: rgb(21, 84, 28);
 .join{
   padding: .7rem;
   border-radius: 1rem;
-  background: rgb(57, 56, 69);
+  background-color: #312c4e;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
   text-decoration: none;
