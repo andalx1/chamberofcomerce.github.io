@@ -32,7 +32,7 @@
 /*grid de home html xxxxxxxxxxxxxxxxXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 .contehome {
   background: rgb(131, 181, 193);
-  font-family: 'Kanit', sans-serif;
+  font-family: 'rajdhani', sans-serif;
   display: grid;
   grid-template-columns: 15% 1fr 1fr 1fr 15%;
   grid-template-rows: repeat(8, auto);
@@ -90,6 +90,7 @@
 .contehome .fab2{
   background: #fcf9f9;
   grid-area:fab2;
+
 }
 .contehome .fab3{
   background: #fcf9f9;
@@ -127,14 +128,22 @@
   color: white;
 }
 .townfot1, .townfot2, .townfot3{
-  width: 90%;
-  height: 50%;
-  border-radius: 1rem;
-  padding: .5rem;
-  box-shadow: 2px 2px 9px black;
+  width: 100%;
+  height:15rem;
+  border-radius: 1rem 1rem 0 0;
 }
 .fabinfo1, .fabinfo2, .fabinfo3{
-  padding: 1rem;
+  background-color: #312c4e;
+  color: white;
+  height: 28rem;
+  border-radius: 1rem;
+  padding: .5rem;
+  margin: .5rem;
+  box-shadow: 2px 2px 9px black;
+  margin-bottom: 4rem;
+}
+.presh1, .presh2, .presh3{
+  font-size: .9rem;
 }
 
 .join{
