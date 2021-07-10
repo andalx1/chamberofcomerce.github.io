@@ -14,7 +14,7 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
 }
 .topnav a:hover {
   background-color: #ddd;
@@ -32,7 +32,7 @@
 /*grid de home html xxxxxxxxxxxxxxxxXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 .contehome {
   background: rgb(131, 181, 193);
-  font-family: 'rajdhani', sans-serif;
+  font-family: 'Syncopate', sans-serif;
   display: grid;
   grid-template-columns: 15% 1fr 1fr 1fr 15%;
   grid-template-rows: repeat(8, auto);
@@ -42,7 +42,7 @@
                       "space   goals   goals   goals    space1"
                       "space   compinf    compinf   compinf   space1"
                       "space   fab1   fab2   fab3    space1"
-                      "footer   footer     footer      footer    footer";
+                      "footer   footer     footer      footer2    footer2";
 }
 
 .contehome .logo {
@@ -71,12 +71,18 @@
   grid-area: landscape;
 }
 .contehome .purpose{
-  background: #571fb6;
+  padding: 2.5rem 2.5rem 0;
+  background: #fcf9f9;
   grid-area:purpose;
 }
 .contehome .goals{
-  background: #e4f740;
+  padding: 3rem;
+  background: #fcf9f9;
   grid-area:goals;
+}
+.goals p{
+  padding-top: 1.5rem;
+  line-height: 1.7rem;
 }
 .contehome .compinf {
   background: #fcf9f9;
@@ -84,40 +90,72 @@
   padding: 3rem;
 }
 .contehome .fab1{
+  font-family: 'Syncopate', sans-serif;
   background: #fcf9f9;
   grid-area:fab1;
 }
 .contehome .fab2{
+  font-family: 'Syncopate', sans-serif;
   background: #fcf9f9;
   grid-area:fab2;
 
 }
 .contehome .fab3{
+  font-family: 'Syncopate', sans-serif;
   background: #fcf9f9;
   grid-area:fab3;
 }
 .contehome .footer{
-  background-color: #312c4e;
+  background-color: #303031;
+  padding: 2.5rem;
   color: white;
   grid-area:footer;
+  text-decoration: none;
 }
+.contehome .footer2{
+  background-color: #303031;
+  padding: 2.5rem;
+  color: white;
+  grid-area:footer2;
+}
+.footer2 a{
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: center;
+}
+.social a{
+  text-decoration: none;
+  color: aliceblue;
+  line-height: 1rem;
+}
+.social img{
+  width: 4rem;
+}
+
+
 .logo img{
   width: 6rem;
   padding-top: .5rem;
 }
 .titulo {
+  padding-top: .5rem;
+  font-family: 'Syncopate', sans-serif;
   font-size: 1rem;
   color: rgb(249, 250, 248);
   text-shadow: 1px 1px 15px black, 0 0 .2em blue, 0 0 0.2em blue;
 }
 .chamname{
+  font-family: 'Syncopate', sans-serif;
   padding: .6rem;
 }
 .chamenu {
+  font-family: 'Syncopate', sans-serif;
   padding-top: 2rem;
 }
 .moto {
-  font-size: 1.4rem;
+  padding: 1rem;
+  font-size: 1rem;
   color: rgb(249, 249, 252);
   } 
   .landscape{
@@ -167,6 +205,7 @@ opacity: .9;  font-size: 3rem;
   padding: 4rem;
 }
 .anuncio{
+  font-family: 'Josefin Sans', sans-serif;
   color: white;
   width: 40rem;
   position: absolute;
