@@ -75,7 +75,7 @@
   grid-area:purpose;
 }
 .contehome .goals{
-  background: #fcf9f9;
+  background: #e4f740;
   grid-area:goals;
 }
 .contehome .compinf {
@@ -84,9 +84,8 @@
   padding: 3rem;
 }
 .contehome .fab1{
-  background: #ddd6d6;
+  background: #fcf9f9;
   grid-area:fab1;
-  margin: 4px;
 }
 .contehome .fab2{
   background: #fcf9f9;
@@ -124,13 +123,18 @@
     width: 100%;
     position: relative;
 }
-.anuncio1, .anuncio2,{
+.anuncio1, .anuncio2 {
   color: white;
 }
 .townfot1, .townfot2, .townfot3{
-  width: 100%;
+  width: 90%;
   height: 50%;
-  border-radius: .5rem;
+  border-radius: 1rem;
+  padding: .5rem;
+  box-shadow: 2px 2px 9px black;
+}
+.fabinfo1, .fabinfo2, .fabinfo3{
+  padding: 1rem;
 }
 
 .join{
