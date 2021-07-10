@@ -107,14 +107,15 @@
 }
 .contehome .footer{
   background-color: #303031;
-  padding: 2.5rem;
+  padding: 2.5rem 0rem 2.5rem 11rem;
   color: white;
   grid-area:footer;
   text-decoration: none;
+  line-height: 2.5rem;
 }
 .contehome .footer2{
   background-color: #303031;
-  padding: 2.5rem;
+  padding: 4rem 8rem 0rem 0rem;
   color: white;
   grid-area:footer2;
 }
@@ -132,7 +133,18 @@
 .social img{
   width: 4rem;
 }
-
+.contact h2{
+  text-align: center;
+}
+.copyright p {
+  text-align: center;
+  font-size: .8rem;
+  color: aliceblue;
+}
+.copyright a{
+  text-decoration: none;
+  color: aliceblue;
+}
 
 .logo img{
   width: 6rem;

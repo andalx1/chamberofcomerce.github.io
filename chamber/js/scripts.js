@@ -1,3 +1,5 @@
+document.querySelector('#lastmod').textContent = document.lastModified;
+
 const toogle = document.querySelector(".toogle")
 const navmenu = document.querySelector(".nav-menu")
 
