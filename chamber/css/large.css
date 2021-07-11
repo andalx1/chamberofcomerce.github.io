@@ -38,6 +38,7 @@
   grid-template-rows: repeat(8, auto);
   grid-template-areas:"logo     chamname   chamname   chamenu   chamenu"
                       "landscape   landscape   landscape   landscape     landscape"
+                      "event   event   event   event   event"
                       "space   purpose   purpose   purpose   space1"
                       "space   goals   goals   goals    space1"
                       "space   compinf    compinf   compinf   space1"
@@ -69,6 +70,11 @@
 }
 .contehome .landscape {
   grid-area: landscape;
+}
+.contehome .event {
+  padding: 2rem;
+  background: rgb(136, 240, 32);
+  grid-area: event;
 }
 .contehome .purpose{
   padding: 2.5rem 2.5rem 0;
@@ -174,9 +180,6 @@
     width: 100%;
     position: relative;
 }
-.anuncio1, .anuncio2 {
-  color: white;
-}
 .townfot1, .townfot2, .townfot3{
   width: 100%;
   height:15rem;
@@ -185,12 +188,16 @@
 .fabinfo1, .fabinfo2, .fabinfo3{
   background-color: #312c4e;
   color: white;
-  height: 28rem;
+  height: 90%;
   border-radius: 1rem;
   padding: .5rem;
   margin: .5rem;
   box-shadow: 2px 2px 9px black;
   margin-bottom: 4rem;
+  line-height: 1.5rem;
+}
+.fab1, .fab2, .fab3 p{
+  font-size: .8rem;
 }
 .presh1, .presh2, .presh3{
   font-size: .9rem;
@@ -199,18 +206,23 @@
 .join{
   padding: .7rem;
   border-radius: 1rem;
-  background-color: #312c4e;
+  background-color: #faf9fc;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
   text-decoration: none;
-  color: whitesmoke;
+  color: rgb(8, 8, 8);
+  text-shadow: none;
+  margin-top: 1rem;
 }
-
+.anuncio1{
+  font-size: 2rem;
+}
 .anuncio2{
-opacity: .9;  font-size: 3rem;
+ font-size: 3rem;
 }
 .anuncio3{
-  font-size: 2rem;
+  font-size: 2.5rem;
+  padding-left: 2rem;
 }
 
 .home {
@@ -219,17 +231,41 @@ opacity: .9;  font-size: 3rem;
 .anuncio{
   font-family: 'Josefin Sans', sans-serif;
   color: white;
-  width: 40rem;
+  width: 45%;
   position: absolute;
-  right: 3rem;
-  top: 5rem;
-  border-radius: 10rem 0 10rem 0;
+  right: 1rem;
+  top: 1rem;
   padding: 4rem;
   display: flex;
   justify-content: right;
   align-items:center;
   flex-direction: column;
-  text-shadow: 4px 4px 4px rgb(12, 12, 12);
+  text-shadow: 2px 2px 2px rgb(12, 12, 12);
+}
+.anuncio11{
+  opacity: .8;
+  background: rgb(254, 255, 254);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  width: 50%;
+  position: absolute;
+  right: 3rem;
+  bottom: 2rem;
+  border-radius: 1rem;
+  padding: .5rem;
+  display: flex;
+  align-items:center;
+  flex-direction: row;
+justify-content:space-around;
+}
+.three img{
+  width:20rem;
+}
+.anu1{
+}
+.temp1{
+  font-size: 5rem;
 }
 
 /*ddddddddddddddddddddddddddddddddddggggggggggggggggggggggggggggggdddddddddddd*/
