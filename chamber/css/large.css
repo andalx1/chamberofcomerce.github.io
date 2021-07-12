@@ -49,8 +49,10 @@
 .contehome .logo {
   background: rgb(253, 43, 43);
   grid-area: logo;
-  padding-left: 7rem;
   border-radius: 0 0 0 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .contehome .chamname {
   background: rgb(253, 43, 43);
@@ -67,6 +69,9 @@
 .contehome .space1 {
   background: #fcf9f9;
   grid-area: space1;
+}
+.contehome .temp {
+  grid-area: temp;
 }
 .contehome .landscape {
   grid-area: landscape;
@@ -154,7 +159,7 @@
 
 .logo img{
   width: 6rem;
-  padding-top: .5rem;
+  
 }
 .titulo {
   padding-top: .5rem;
@@ -176,9 +181,12 @@
   font-size: 1rem;
   color: rgb(249, 249, 252);
   } 
-  .landscape{
+.landscape{
     width: 100%;
     position: relative;
+}
+.landscape img{
+  width: 100%;
 }
 .townfot1, .townfot2, .townfot3{
   width: 100%;
@@ -248,7 +256,6 @@
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5rem;
   color: black;
-  width: 50%;
   position: absolute;
   right: 3rem;
   bottom: 2rem;
@@ -266,237 +273,4 @@ justify-content:space-around;
 }
 .temp1{
   font-size: 5rem;
-}
-
-/*ddddddddddddddddddddddddddddddddddggggggggggggggggggggggggggggggdddddddddddd*/
-
-
-.contenedor, .contenedorg {
-  background: rgb(254, 255, 255);
-  display: block;
-  color: #f7b425;
-  font-family: 'Kanit', sans-serif;
-  margin: auto;
-  font-size: 20px;
-  text-align: center;
-  width: 100%;
-}
-.home, .town {
-  padding: 30px;
-  text-align: left;
-}
-.cielo img{
-  width: 100%;
-}
-.summary{
-  opacity: .7 ;
-  color: black;
-  width: 20rem;
-  font-size: 1.5rem;
-  right: 4rem;
-  top: 4rem;
-  border-radius: 1rem;
-  background: rgb(168, 194, 194);
-  position: absolute;
-  padding: 2px;
-}
-.wesum {
-  opacity: none;
-  color: rgb(27, 115, 91);
-  font-size: 2rem;
-  background: #f7b425;
-  padding: .5rem;
-  border-radius: 1rem;
-}
-.land img {
-  width: 100%;
-  height:30rem;
-}
-.contenido {
-  color: #f7b425;
-  width: 100%;
-  margin: auto;
-  padding: 40px 0;
-}
-.five{
-  text-align: left;
-  padding-left: 20px;
-  padding-bottom: 3rem;
-}
-.fived{
-  width: 90%;
-  box-shadow: 1px 1px 12px rgb(72, 73, 72);
-  border-radius: .5rem;
-
-}
-.article{
-  color: #f7b425;
-  padding: 20px;
-  font-size: 18px;
-}
-.imaart {
-width: 100%;
-box-shadow: 1px 1px 18px rgb(67, 68, 66);
-border-radius: .5rem;
-color: rgb(21, 84, 28);
-}
-
-.form fieldset{
-  background: rgb(100, 97, 97);
-}
-.form li{
-  list-style-type: none;
-  padding: 1.5rem;
-  font-size: 1.5rem;
-}
-.form input{
-  font-size: 1.5rem;
-}
-
-.acti1, .acti2, .acti3 {
-  color: rgb(27, 115, 91);
-  background: white;
-  border-radius: .3rem;
-  line-height: 2rem;
-  margin-bottom: 3rem;
-}
-.tofot1, .tofot2, .tofot3{
-  width: 100%;
-  height: 60%;
-  border-radius: .3rem 0;
-}
-.acti {
-  padding: 3.5rem;
-  display: flex;
-}
-.mapfot{
-  width:85%;  
-}
-.map{
-  padding: 2rem;
-  margin-right: -1rem;
-}
-
-
-
-/*grid de preston html xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-.contenedor {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 20% 1fr 1fr 1fr 20%;
-  grid-template-rows: repeat(6, auto);
-  grid-template-areas:"chamenu     header   header      header      header"
-                      "nav         nav     nav         nav         nav"
-                      "space   landscape   landscape   landscape     space1"
-                      "space   contenido   contenido   contenido    space1"
-                      "space   article     article     imaart    space1"
-                      "space   footer      footer      footer    space1";
-}
-.contenedor .header {
-  background: white;
-  grid-area: header;
-}
-.contenedor .nav {
-  grid-area: nav;
-}
-.contenedor .space {
-  grid-area: space;
-}
-.contenedor .space1 {
-  grid-area: space;
-}
-.contenedor .landscape {
-  grid-area: landscape;
-}
-.contenedor .contenido{
-
-  grid-area:contenido;
-}
-.contenedor .article{
-  grid-area:article;
-}
-.contenedor .imaart{
-  background: rgb(255, 255, 254);
-  grid-area:imaart;
-}
-.contenedor .footer{
-  background: rgb(5, 5, 5);
-  color: white;
-  grid-area:footer;
-}
-
-
-/*grid de gallery html xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-.contenedorg {
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: 20% 1fr 1fr 1fr 20%;
-  grid-template-rows: repeat(6, auto);
-  grid-template-areas:"header     header   header      header      header"
-                      "nav         nav     nav         nav         nav"
-                      "space   ima1   ima2   ima3     space1"
-                      "space   ima4   ima5   ima6    space1"
-                      "space   ima7   ima8   ima9    space1"
-                      "space   footer      footer      footer    space1";
-}
-.contenedorg .header {
-  background: white;
-  grid-area: header;
-}
-.contenedorg .nav {
-  grid-area: nav;
-}
-.contenedorg .space {
-  grid-area: space;
-}
-.contenedorg .space1 {
-  grid-area: space;
-}
-.contenedorg .ima1 {
-  grid-area: ima1;
-}
-.contenedorg .ima2 {
-  grid-area: ima2;
-}
-.contenedorg .ima3{
-  grid-area:ima3;
-}
-.contenedorg .ima4 {
-  grid-area: ima4;
-}
-.contenedorg .ima5 {
-  grid-area: ima5;
-}
-.contenedorg .ima6{
-  grid-area:ima6;
-}
-.contenedorg .ima7 {
-  grid-area: ima7;
-}
-.contenedorg .ima8 {
-  grid-area: ima8;
-}
-.contenedorg .ima9{
-  grid-area:ima9;
-}
-.contenedorg .footer{
-  background: rgb(5, 5, 5);
-  color: white;
-  grid-area:footer;
-}
-.ima1, .ima2, .ima3, .ima4, .ima5, .ima6, .ima7, .ima8, .ima9{
-  background: white;
-  padding: .2rem;
-  border-radius: 1rem;
-}
-.galima img {
-  width: 100%;
-  height: 17rem;
-  border-radius: 1rem;
-
-}
-.titgal {
-  padding: 2rem;
-  color: rgb(27, 115, 91);
-  font-size: 1.5rem;
 }
